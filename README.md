@@ -6,3 +6,7 @@ Three parameters are taken via QFileDialog, beeing stored into a prefs file in t
 If prefs file doesn't exist at startup, user will be informed to save one.
 
 Feel free to use this source for own studies. :)
+
+# Screenshots
+![procdemo01](https://user-images.githubusercontent.com/23148422/50656250-d97cfe00-0f92-11e9-9cef-3b9e6eac9705.png)
+![procdemo02](https://user-images.githubusercontent.com/23148422/50656255-dda91b80-0f92-11e9-8f19-c72f67b5f3fd.png)
