@@ -15,6 +15,6 @@
 
 int main(void)
 {
-	printf("fuck\n");
+	printf("Fine! You compiled me!\n");
 	return 0;
 }
