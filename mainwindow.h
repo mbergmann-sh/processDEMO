@@ -62,6 +62,7 @@ private slots:
     void on_btnGetFile_clicked();
     void savePrefs();
     void getPrefs();
+    void showFile();
 };
 
 #endif // MAINWINDOW_H

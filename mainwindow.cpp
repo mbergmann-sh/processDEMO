@@ -189,4 +189,9 @@ void MainWindow::getPrefs()
     }
 }
 
+void MainWindow::showFile()
+{
+
+}
+
 
