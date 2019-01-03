@@ -18,6 +18,9 @@ MainWindow::MainWindow(QWidget *parent) :
 
     // look for existing prefs file:
     getPrefs();
+
+    // Show source file in QTextBrowser
+    showFile();
 }
 
 MainWindow::~MainWindow()
@@ -106,6 +109,9 @@ void MainWindow::on_btnGetFile_clicked()
                                                     tr("All files (*)"));
     ui->leFilepath->setText(fileName);
     p_FILEexe = fileName;
+
+    // Show file in Window!
+    showFile();
 }
 
 void MainWindow::savePrefs()
@@ -191,6 +197,30 @@ void MainWindow::getPrefs()
 
 void MainWindow::showFile()
 {
+    QFile file(p_FILEexe);
+    QString line;
+
+    if(!(file.exists()))
+    {
+        qDebug() << "File not found!";
+    }
+    else
+    {
+        qDebug() << "Now opening " << p_FILEexe;
+
+        ui->output->clear();
+        if(file.open(QIODevice::ReadOnly | QIODevice::Text))
+        {
+            QTextStream stream(&file);
+            while(!(stream.atEnd()))
+            {
+                line = stream.readLine();
+                ui->output->setText(ui->output->toPlainText() + line + "\n");
+            }
+            file.close();
+        }
+    }
+
 
 }
 

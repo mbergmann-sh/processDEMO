@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>355</width>
-    <height>355</height>
+    <width>431</width>
+    <height>344</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -62,7 +62,7 @@
     <item row="0" column="4">
      <widget class="QPushButton" name="btnRun">
       <property name="text">
-       <string>Run command</string>
+       <string>Run Compiler!</string>
       </property>
      </widget>
     </item>
@@ -158,8 +158,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>355</width>
-     <height>21</height>
+     <width>431</width>
+     <height>22</height>
     </rect>
    </property>
   </widget>
